@@ -103,7 +103,7 @@ void LiveSLAMWrapper::Loop()
 		imageStream->getBuffer()->popFront();
 		
 		// process image
-		//Util::displayImage("MyVideo", image.data);
+    Util::displayImage("MyVideo", image.data);
 		newImageCallback(image.data, image.timestamp);
 	}
 }
